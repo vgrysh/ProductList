@@ -1,12 +1,14 @@
 import { Component, OnInit}  from 'angular2/core';
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
+import { StarComponent } from '../shared/star.component';
 
 @Component({
     selector: 'pm-products',
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css'],
-    pipes: [ProductFilterPipe]
+    pipes: [ProductFilterPipe],
+    directives: [StarComponent]
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
@@ -33,7 +35,7 @@ export class ProductListComponent implements OnInit {
                 "releaseDate": "March 19, 2016",
                 "description": "Leaf rake with 48-inch wooden handle.",
                 "price": 19.95,
-                "starRating": 3.2,
+                "starRating": 4,
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
             },
             {
