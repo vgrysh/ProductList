@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 function StarComponent() {
                 }
                 StarComponent.prototype.ngOnChanges = function () {
-                    this.starWidht = this.rating * 86 / 5;
+                    this.starWidth = this.rating * 86 / 5;
                 };
                 __decorate([
                     core_1.Input(), 
