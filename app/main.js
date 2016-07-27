@@ -12,6 +12,7 @@ System.register(['angular2/platform/browser', './app.component'], function(expor
             }],
         execute: function() {
             browser_1.bootstrap(app_component_1.AppComponent);
+            console.log('asd');
         }
     }
 });
